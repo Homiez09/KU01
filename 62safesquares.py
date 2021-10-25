@@ -1,8 +1,8 @@
 #ได้ 20 คะแนน
 mode = [int(x) for x in input().split()]
 
-N = mode[0]
-M = mode[1]
+N = mode[0]%25621
+M = mode[1]%25621
 K = mode[-1]
 
 enemys = []
@@ -19,4 +19,4 @@ for i in range(len(enemys)):
     [redzone.append((enemys[i][0],j+1)) for j in range(M)]
 
 greenzone = list(set(field)-set(redzone))
-print(len(greenzone)%25621)
+print(len(greenzone))
